@@ -50,7 +50,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return The difference between the two numbers.
      */
     public static Integer subtraction(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        Integer difference = a - b;
+        return difference; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -62,7 +63,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return The product of the two numbers.
      */
     public static Integer multiplication(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        Integer product = a * b;
+        return product; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -75,7 +77,13 @@ public with sharing class VariablesDataTypesOperators {
      * @return The quotient of the division, or 0 if the denominator is zero.
      */
     public static Decimal division(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        Decimal quotient;
+        If (b = 0){
+            quotient = 0;
+        } else {
+            quotient = a / b;
+        }
+        return quotient; // Replace null with the variable you used to store the result
     }
 
     /**
