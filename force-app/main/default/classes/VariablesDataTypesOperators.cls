@@ -38,7 +38,7 @@ public with sharing class VariablesDataTypesOperators {
         } else {
            c = a + b;
         }   
-        return c; // Replace null with the variable you used to store the result
+        return c;
     }
 
     /**
@@ -51,7 +51,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Integer subtraction(Integer a, Integer b) {
         Integer difference = a - b;
-        return difference; // Replace null with the variable you used to store the result
+        return difference;
     }
 
     /**
@@ -64,7 +64,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Integer multiplication(Integer a, Integer b) {
         Integer product = a * b;
-        return product; // Replace null with the variable you used to store the result
+        return product;
     }
 
     /**
@@ -78,12 +78,12 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Decimal division(Integer a, Integer b) {
         Decimal quotient;
-        If (b = 0){
+        If (b == 0) {
             quotient = 0;
         } else {
             quotient = a / b;
         }
-        return quotient; // Replace null with the variable you used to store the result
+        return quotient;
     }
 
     /**
@@ -97,7 +97,12 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the number is even, False otherwise.
      */
     public static Boolean isEven(Integer num) {
-        return null; // Replace null with the variable you used to store the result
+        Integer numRemainder = Math.mod(num, 2);
+        Boolean isNumEven = true;
+        if (numRemainder == 1) {
+            isNumEven = !isNumEven; //toggle to false
+        }
+        return isNumEven;
     }
 
     /**
