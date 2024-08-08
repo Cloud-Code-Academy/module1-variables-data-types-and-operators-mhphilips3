@@ -113,7 +113,12 @@ public with sharing class VariablesDataTypesOperators {
      * @return true if the number is positive, false otherwise.
      */
     public static Boolean isPositive(Integer num) {
-        return null; // Replace null with the variable you used to store the result
+        Boolean isNumPositive = true;
+        if (num <= 0) {  //Assumption that 0 is considered "non-positive"
+            isNumPositive = !isNumPositive;
+
+        }
+        return isNumPositive;
     }
 
     /**
@@ -125,7 +130,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return The concatenated string.
      */
     public static String concatenateStrings(String str1, String str2) {
-        return null; // Replace null with the variable you used to store the result
+        String combinedString = str1 + str2;
+        return combinedString;
     }
 
 	/**
@@ -140,7 +146,8 @@ public with sharing class VariablesDataTypesOperators {
 	 * @return The complete sentence as a single String.
 	 */
 	public static String createSentence(String noun, String verb, String endingPunctuation) {
-		return null; // Replace null with the variable you used to store the result
+        String concatSentence = 'The ' + noun + ' is ' + verb + endingPunctuation;
+		return concatSentence;
 	}
 
     /**
