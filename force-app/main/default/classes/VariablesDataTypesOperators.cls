@@ -277,8 +277,9 @@ public with sharing class VariablesDataTypesOperators {
         final Double SUBTRACT_FACTOR = 32.0;
         final Double MULTIPLY_FACTOR = 5.0;
         final Double DIVIDE_FACTOR = 9.0;
+        Double tempCelsius = (fahrenheit - SUBTRACT_FACTOR) * MULTIPLY_FACTOR/DIVIDE_FACTOR;
     
-        return null; // Replace null with the variable you used to store the result
+        return tempCelsius; // Replace null with the variable you used to store the result
     }
 
     
@@ -294,11 +295,11 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Integer performDivisionAndCast(Double a, Double b) {
         // Perform the division and cast (round down) off the result.
-        Double divisionResult = null;
+        Double divisionResult = a / b;
 
         // Write the code for type casting the divisionResult to an Integer
-        Integer roundedResult = null;
-        return null; // Replace null with the variable you used to store the result
+        Integer roundedResult = (Integer) divisionResult;
+        return roundedResult;
     }
 
     /**
