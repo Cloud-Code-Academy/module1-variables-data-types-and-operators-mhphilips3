@@ -160,7 +160,11 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the date is in the past, False otherwise.
      */
     public static Boolean isDateInPast(Date dt) {
-        return null; // Replace null with the variable you used to store the result
+        Boolean isdtInPast = true;
+        if(dt >= Date.today()){ //checks for today's date or future date
+            isdtInPast = !isdtInPast;
+        }
+        return isdtInPast;
     }
 
     /**
@@ -173,7 +177,11 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the date is today or in the future, False otherwise.
      */
     public static Boolean isDateTodayOrFuture(Date dt) {
-        return null; // Replace null with the variable you used to store the result
+        Boolean isdtNotInPast = true;
+        if(dt < Date.today()){
+            isdtNotInPast = !isdtNotInPast;
+        }
+        return isdtNotInPast;
     }
 
     /**
@@ -186,9 +194,9 @@ public with sharing class VariablesDataTypesOperators {
      * @return The number of milliseconds equivalent to the given number of minutes.
      */
     public static Integer convertMinutesToMilliseconds(Integer minutes) {
-        Integer MILLISECONDS_PER_MINUTE = null; // Make this value a constant
-        Integer milliseconds;
-        return null; // Replace null with the variable you used to store the result
+        final Integer MILLISECONDS_PER_MINUTE = 60000;
+        Integer milliseconds = minutes * MILLISECONDS_PER_MINUTE;
+        return milliseconds;
     }    
 
     /**
@@ -202,7 +210,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return The average of the three numbers.
      */
     public static Double averageOfThreeNumbers(Integer a, Integer b, Integer c) {
-        return null; // Replace null with the variable you used to store the result
+        Decimal average = (a + b + c) / 3;
+        return average;
     }
 
     /**
