@@ -107,7 +107,7 @@ public with sharing class VariablesDataTypesOperators {
 
     /**
      * Question 6
-     * Checks if a number is positive.
+     * Checks if a number is positive!
      * Example: isPositive(2) should return true
      * @param num The number to check.
      * @return true if the number is positive, false otherwise.
